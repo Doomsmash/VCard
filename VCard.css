@@ -1,0 +1,76 @@
+body
+{
+    background-image:url("Fond2.jpg");
+    background-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#contenu
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20% 10% 10% 10% 50%;
+}
+
+#me
+{
+    grid-area: 1/2/1/3;
+    place-self: center center;
+    background-image: url("Moi3.jpg");
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    position: sticky;
+}
+
+#me img
+{
+    opacity: 0;
+}
+
+h1
+{
+    grid-area: 2/2/3/3;
+    place-self: center center;
+    position: sticky;
+    color: white;
+}
+
+h2
+{
+color: white;
+}
+
+#status
+{
+    grid-area: 3/2/4/3;
+    place-self: end center;
+    position: sticky;
+}
+
+#links
+{
+    grid-area: 4/2/5/2;
+    place-self: start center;
+}
+
+#about_me
+{
+    grid-area: 5/1/6/2;
+    color: white;
+    place-self: start center;
+}
+
+#skills
+{
+    grid-area: 5/2/6/3;
+    place-self: start center;
+    color: white;
+}
+
+#language
+{
+    grid-area: 5/3/6/4;
+    place-self: start center;
+    color: white;
+}
